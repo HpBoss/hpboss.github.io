@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Joson</title>
+    <link>https://hpboss.github.io/</link>
+    <description>Recent content on Joson</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Wed, 30 Oct 2019 19:52:16 +0800</lastBuildDate>
+    
+	<atom:link href="https://hpboss.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Spaider_Man</title>
+      <link>https://hpboss.github.io/post/spaider_man/</link>
+      <pubDate>Wed, 30 Oct 2019 19:52:16 +0800</pubDate>
+      
+      <guid>https://hpboss.github.io/post/spaider_man/</guid>
+      <description>蜘蛛侠 · 英雄远征 Iron-Man的离开 在与灭霸一战之后Marvel superheroes 少了许多，大家最为怀念的还是钢铁侠，都在想下一个钢铁侠将会是谁？ 在前几部的蜘蛛侠电影中，我们见到了钢铁侠的身影，他对蜘蛛侠十分照顾，也为蜘蛛侠设计了新战衣，可谓是对蜘蛛侠太好了！首先是蜘蛛侠得到了托尼*斯塔克的价值数十亿美元的伊迪斯，这就相对于继承了钢铁侠的大不半个产业帝国，可想钢铁侠就是想Spider man来继承他的事业，这也是Marvel Company为接下来的超级英雄故事做的铺垫吧。
+Spider-Man追MJ 一个很有趣的故事主线，皮特·帕克参与学校去欧洲的暑假夏令营活动（我们学校有该多好），但是他是想趁机泡上MJ，没错他就是一个“色批”，然后他们去的每一个景点都遇到“外星人”，这小子最后也追到了MJ（这个逼最后还跟MJ打kiss），我很怀疑MJ是不是真的喜欢他，毕竟MJ已经知道了皮特·帕克的真实身份，在如此之短的相处了解时间里就会喜欢上一个人（可能美国人确实来得快去得也快）。
+Spider-Man被自己的善良、退缩所打倒 他很善良很少会对身边的人产生怀疑，他的心中一直都把自己当做是别人眼中的“友好邻居”、“城市犯罪打击者”，瞬间担负起拯救世界的super-man，他的内心是无法接受。但正是在这样的逆境中皮特·帕克得到了成长，也得到了自己所追寻的爱情。
+Spider-Man的时代即将到来 在电影中我们可以看到，钢铁侠的时代需要有人来继承，而且钢铁侠选中了蜘蛛侠作为自己的接班人，本部电影就是蜘蛛侠从钢铁侠手中接过接力棒的过程，他的成长由《英雄远征》来讲述。同时电影中也给了许多梅婶和霍根（托尼·史塔克的司机）镜头，并不是为给电影添加一些有趣的镜头，而是促进Spider-Man时代的到来！</description>
+    </item>
+    
+    <item>
+      <title>Java_Swing</title>
+      <link>https://hpboss.github.io/post/java_swing/</link>
+      <pubDate>Wed, 30 Oct 2019 19:51:56 +0800</pubDate>
+      
+      <guid>https://hpboss.github.io/post/java_swing/</guid>
+      <description> Java Swing  一般都是继承JFrame类，在构造函数中就不用再去new“JFrame”类；
+ Containor c = getContentPane();//获取窗体容器；
+ JDialog的构造函数有三个参数，第一个是其父窗体，第二个是Dialog的标题，第三个是一个布尔值，判断是否阻塞窗体；
+ 标签的setFont()方法改变字体，参数分别是（字体名称，字体类型，字体大小）,更改前景色setForeground();
+ 在窗体里添加图片：
+  JLable（text、image）
+​ URL url = 类.class.getResource(image.path) ​ Icon icon = new ImageIcon(url) ​ Icon icon = new ImageIcon(image.path) ​ label.setIcon(icon) ​ label.setSize()
+ 设置标签大小，图片的大小不会变化,同样改变窗口的大小也不会改变图片的小，只改变图片显示的大小；
+  设置窗体关闭规则：setDefualtCloseOperation();
+ 绝对布局：创狗左上角坐标为（0,0），组件的大小不会随着窗口大小的改变而改变；
+ 流布局：从左向右像水一样流动，遇到障碍物就换行；setLayout(new FlowLayout(FlowLayout.RIGHT,水平间距，垂直间距)),如果里面什么都不写就是默认水平居中对齐；
+ 边界布局：将容器划分为五个区域（上、下、左、右、中），添加组件要指定区域，否则默认添加到CENTER，而且同一区域组件会互相覆盖，其实容器的默认布局就是边界布局，添加方法：add(组件名,BorderLayout.方向);会随着窗口大小的变化而变化；
+ 网格布局：new GridLayout(行，列，水平间距，垂直间距),有一个重要的特性：当你没有添加网格布局的大小时或者当你添加的组件超出你设定网格的大小时，系统将自动添加所需的行和列，窗体能按照你的的布局将其组件完全装下；
+ 网格组（包）布局管理器：优点是很灵活，但缺点是需要些很多的代码设置，同样是以左上角为原点坐标；
+  </description>
+    </item>
+    
+  </channel>
+</rss>

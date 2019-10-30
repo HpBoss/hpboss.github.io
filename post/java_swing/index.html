@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en-us">
+  <head>
+    <title>Java_Swing // Joson</title>
+    <meta charset="utf-8" />
+    <meta name="generator" content="Hugo 0.59.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Joson" />
+    <meta name="description" content="" />
+    <link rel="stylesheet" href="https://hpboss.github.io/css/main.min.f90f5edd436ec7b74ad05479a05705770306911f721193e7845948fb07fe1335.css" />
+
+    
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Java_Swing"/>
+<meta name="twitter:description" content=" Java Swing  一般都是继承JFrame类，在构造函数中就不用再去new“JFrame”类；
+ Containor c = getContentPane();//获取窗体容器；
+ JDialog的构造函数有三个参数，第一个是其父窗体，第二个是Dialog的标题，第三个是一个布尔值，判断是否阻塞窗体；
+ 标签的setFont()方法改变字体，参数分别是（字体名称，字体类型，字体大小）,更改前景色setForeground();
+ 在窗体里添加图片：
+  JLable（text、image）
+​ URL url = 类.class.getResource(image.path) ​ Icon icon = new ImageIcon(url) ​ Icon icon = new ImageIcon(image.path) ​ label.setIcon(icon) ​ label.setSize()
+ 设置标签大小，图片的大小不会变化,同样改变窗口的大小也不会改变图片的小，只改变图片显示的大小；
+  设置窗体关闭规则：setDefualtCloseOperation();
+ 绝对布局：创狗左上角坐标为（0,0），组件的大小不会随着窗口大小的改变而改变；
+ 流布局：从左向右像水一样流动，遇到障碍物就换行；setLayout(new FlowLayout(FlowLayout.RIGHT,水平间距，垂直间距)),如果里面什么都不写就是默认水平居中对齐；
+ 边界布局：将容器划分为五个区域（上、下、左、右、中），添加组件要指定区域，否则默认添加到CENTER，而且同一区域组件会互相覆盖，其实容器的默认布局就是边界布局，添加方法：add(组件名,BorderLayout.方向);会随着窗口大小的变化而变化；
+ 网格布局：new GridLayout(行，列，水平间距，垂直间距),有一个重要的特性：当你没有添加网格布局的大小时或者当你添加的组件超出你设定网格的大小时，系统将自动添加所需的行和列，窗体能按照你的的布局将其组件完全装下；
+ 网格组（包）布局管理器：优点是很灵活，但缺点是需要些很多的代码设置，同样是以左上角为原点坐标；
+  "/>
+
+    <meta property="og:title" content="Java_Swing" />
+<meta property="og:description" content=" Java Swing  一般都是继承JFrame类，在构造函数中就不用再去new“JFrame”类；
+ Containor c = getContentPane();//获取窗体容器；
+ JDialog的构造函数有三个参数，第一个是其父窗体，第二个是Dialog的标题，第三个是一个布尔值，判断是否阻塞窗体；
+ 标签的setFont()方法改变字体，参数分别是（字体名称，字体类型，字体大小）,更改前景色setForeground();
+ 在窗体里添加图片：
+  JLable（text、image）
+​ URL url = 类.class.getResource(image.path) ​ Icon icon = new ImageIcon(url) ​ Icon icon = new ImageIcon(image.path) ​ label.setIcon(icon) ​ label.setSize()
+ 设置标签大小，图片的大小不会变化,同样改变窗口的大小也不会改变图片的小，只改变图片显示的大小；
+  设置窗体关闭规则：setDefualtCloseOperation();
+ 绝对布局：创狗左上角坐标为（0,0），组件的大小不会随着窗口大小的改变而改变；
+ 流布局：从左向右像水一样流动，遇到障碍物就换行；setLayout(new FlowLayout(FlowLayout.RIGHT,水平间距，垂直间距)),如果里面什么都不写就是默认水平居中对齐；
+ 边界布局：将容器划分为五个区域（上、下、左、右、中），添加组件要指定区域，否则默认添加到CENTER，而且同一区域组件会互相覆盖，其实容器的默认布局就是边界布局，添加方法：add(组件名,BorderLayout.方向);会随着窗口大小的变化而变化；
+ 网格布局：new GridLayout(行，列，水平间距，垂直间距),有一个重要的特性：当你没有添加网格布局的大小时或者当你添加的组件超出你设定网格的大小时，系统将自动添加所需的行和列，窗体能按照你的的布局将其组件完全装下；
+ 网格组（包）布局管理器：优点是很灵活，但缺点是需要些很多的代码设置，同样是以左上角为原点坐标；
+  " />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://hpboss.github.io/post/java_swing/" />
+<meta property="article:published_time" content="2019-10-30T19:51:56+08:00" />
+<meta property="article:modified_time" content="2019-10-30T19:51:56+08:00" />
+
+
+  </head>
+  <body>
+    <header class="app-header">
+      <a href="https://hpboss.github.io/"><img class="app-header-avatar" src="/dog.png" alt="Joson" /></a>
+      <h1>Joson</h1>
+      <p>Android Explorer.This is not only a technology sharing, but also a witness to my growth.</p>
+      <div class="app-header-social">
+        
+          <a target="_blank" href="https://github.com/HpBoss" rel="noreferrer noopener"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-link">
+  <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path>
+  <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
+</svg></a>
+        
+          <a target="_blank" href="https://twitter.com/gohugoio" rel="noreferrer noopener"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-twitter">
+  <title>twitter</title>
+  <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
+</svg></a>
+        
+      </div>
+    </header>
+    <main class="app-container">
+      
+  <article class="post">
+    <header class="post-header">
+      <h1 class ="post-title">Java_Swing</h1>
+      <div class="post-meta">
+        <div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-calendar">
+  <title>calendar</title>
+  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line>
+</svg>
+          Oct 30, 2019
+        </div>
+        <div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-clock">
+  <title>clock</title>
+  <circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline>
+</svg>
+          1 min read
+        </div></div>
+    </header>
+    <div class="post-content">
+      
+
+<h3 id="java-swing">Java Swing</h3>
+
+<ol>
+<li><p>一般都是继承JFrame类，在构造函数中就不用再去new“JFrame”类；</p></li>
+
+<li><p>Containor c = getContentPane();//获取窗体容器；</p></li>
+
+<li><p>JDialog的构造函数有三个参数，第一个是其父窗体，第二个是Dialog的标题，第三个是一个布尔值，判断是否阻塞窗体；</p></li>
+
+<li><p>标签的setFont()方法改变字体，参数分别是（字体名称，字体类型，字体大小）,更改前景色setForeground();</p></li>
+
+<li><p>在窗体里添加图片：</p></li>
+</ol>
+
+<p>JLable（text、image）</p>
+
+<p>​       URL url = 类.class.getResource(image.path)
+​       Icon icon = new ImageIcon(url)
+​       Icon icon = new ImageIcon(image.path)
+​       label.setIcon(icon)
+​       label.setSize()</p>
+
+<blockquote>
+<p>设置标签大小，图片的大小不会变化,同样改变窗口的大小也不会改变图片的小，只改变图片显示的大小；</p>
+</blockquote>
+
+<ol>
+<li><p>设置窗体关闭规则：setDefualtCloseOperation();</p></li>
+
+<li><p>绝对布局：创狗左上角坐标为（0,0），组件的大小不会随着窗口大小的改变而改变；</p></li>
+
+<li><p>流布局：从左向右像水一样流动，遇到障碍物就换行；setLayout(new FlowLayout(FlowLayout.RIGHT,水平间距，垂直间距)),如果里面什么都不写就是默认水平居中对齐；</p></li>
+
+<li><p>边界布局：将容器划分为五个区域（上、下、左、右、中），添加组件要指定区域，否则默认添加到CENTER，而且同一区域组件会互相覆盖，其实容器的默认布局就是边界布局，添加方法：add(组件名,BorderLayout.方向);会随着窗口大小的变化而变化；</p></li>
+
+<li><p>网格布局：new GridLayout(行，列，水平间距，垂直间距),有一个重要的特性：当你没有添加网格布局的大小时或者当你添加的组件超出你设定网格的大小时，系统将自动添加所需的行和列，窗体能按照你的的布局将其组件完全装下；</p></li>
+
+<li><p>网格组（包）布局管理器：优点是很灵活，但缺点是需要些很多的代码设置，同样是以左上角为原点坐标；</p></li>
+</ol>
+
+    </div>
+    <div class="post-footer">
+      
+    </div>
+  </article>
+
+    </main>
+  </body>
+</html>
